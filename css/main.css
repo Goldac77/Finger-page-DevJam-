@@ -1,4 +1,4 @@
-/*Will refactor css code*/
+/*General Styling*/
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -277,6 +277,14 @@ a {
 
 /*For laptop Users*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
+
     #head {
         position: relative;
     }
@@ -381,22 +389,30 @@ a {
 
     #ex {
         margin-top: 0.7em;
+        font-size: 1.2em;
     }
 
     #email_not button {
         background-color: #000000;
         color: #FFFFFF;
         border-style: none;
-        padding: 0.2em 0.3em;
+        padding: 0.4em 0.4em;
     }
 
     #email_not input {
-        padding: 0.2em;
+        padding: 0.4em;
     }   
 }
 
 /*For Desktops and Large Screens*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    h2 {
+        font-size: 2.2em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
     #head {
         position: relative;
     }
@@ -498,7 +514,9 @@ a {
         justify-content: space-between;
         padding: 1em 8em 1em 8em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.2em;
     }
+
 
     #ex {
         margin-top: 0.7em;
@@ -508,16 +526,24 @@ a {
         background-color: #000000;
         color: #FFFFFF;
         border-style: none;
-        padding: 0.2em 0.3em;
+        padding: 0.4em 0.4em;
     }
 
     #email_not input {
-        padding: 0.2em;
+        padding: 0.4em;
+        width: 70%;
     }
 }
 
 /*For Extra Large Screens and TV*/
 @media screen and (min-width: 1201px) {
+    h2 {
+        font-size: 3.3em;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
     #head {
         position: relative;
     }
@@ -547,7 +573,7 @@ a {
         margin-left: 40vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 2.5em;
     }
 
     #products {
@@ -580,7 +606,7 @@ a {
         margin-left: 35vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 2.5em;
     }
 
     #contact {
@@ -617,8 +643,9 @@ a {
         background-color: #b8bcc3;
         display: flex;
         justify-content: space-between;
-        padding: 1em 15em 1em 15em;
+        padding: 1em 15em 0.4em 15em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5em;
     }
 
     #ex {
@@ -629,10 +656,12 @@ a {
         background-color: #000000;
         color: #FFFFFF;
         border-style: none;
-        padding: 0.2em 0.3em;
+        padding: 0.5em 0.5em;
+        border-radius: 0.5em;
     }
 
     #email_not input {
-        padding: 0.2em;
+        padding: 0.5em;
+        border-radius: 0.5em;
     }
 }
