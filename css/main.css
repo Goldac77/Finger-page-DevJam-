@@ -1,4 +1,4 @@
-/*Will work on refactoring css code*/
+/*Will refactor css code*/
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -10,13 +10,35 @@ body {
     overflow-x: hidden;
 }
 
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a {
+    color: #FF4AC2;
+}
+
+.buy_btn button:hover {
+    background-color: #FF4AC2;
+    color: #FFFFFF;
+}
+
 /*Dark mode Users*/
-/*@media (prefers-color-scheme: dark) {
-    * {
-        color: white;
-        background-color: black;
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #FFFFFF;
     }
-}*/
+
+    #contact form {
+        box-shadow: 0 4px 8px 0 rgb(209, 19, 152), 0 6px 20px 0 rgb(204, 45, 183);
+    }
+}
+
 /*For mobile Users*/
 @media screen and (max-width: 480px) {
     #head {
@@ -33,11 +55,14 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 70%;
     }
 
     .head_text h1 {
         border-style: solid;
         border-width: 2%;
+        border-width: 0.22em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .ftrs_list {
@@ -91,6 +116,7 @@ body {
         width: 70vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     form input {
@@ -113,6 +139,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em 2em 1em 2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #ex {
@@ -143,11 +170,15 @@ body {
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 70%;
     }
 
     .head_text h1 {
         border-style: solid;
         border-width: 2%;
+        border-width: 0.22em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.3em;
     }
 
     .ftrs_list {
@@ -202,6 +233,7 @@ body {
         width: 55vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     form input {
@@ -224,6 +256,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em 4em 1em 4em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #ex {
@@ -235,6 +268,10 @@ body {
         color: #FFFFFF;
         border-style: none;
         padding: 0.2em 0.3em;
+    }
+
+    #email_not input {
+        padding: 0.2em;
     }
 }
 
@@ -258,7 +295,10 @@ body {
 
     .head_text h1 {
         border-style: solid;
-        border-width: 2%;
+        border-width: 0.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.3em;
+        font-size: 3em;
     }
 
     .ftrs_list {
@@ -266,7 +306,7 @@ body {
         margin-left: 35vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 1.7em;
     }
 
     #products {
@@ -298,7 +338,7 @@ body {
         margin-left: 30vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 1.7em;
     }
 
     #contact {
@@ -313,6 +353,7 @@ body {
         width: 45vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     form input {
@@ -335,6 +376,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em 4em 1em 4em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #ex {
@@ -346,6 +388,10 @@ body {
         color: #FFFFFF;
         border-style: none;
         padding: 0.2em 0.3em;
+    }
+
+    #email_not input {
+        padding: 0.2em;
     }   
 }
 
@@ -369,7 +415,10 @@ body {
 
     .head_text h1 {
         border-style: solid;
-        border-width: 2%;
+        border-width: 0.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.3em;
+        font-size: 3em;
     }
 
     .ftrs_list {
@@ -377,7 +426,7 @@ body {
         margin-left: 35vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 1.7em;
     }
 
     #products {
@@ -410,7 +459,7 @@ body {
         margin-left: 30vw;
         list-style-type: square;
         padding-right: 10vw;
-        line-height: 1.5em;
+        line-height: 1.7em;
     }
 
     #contact {
@@ -425,6 +474,7 @@ body {
         width: 35vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     form input {
@@ -447,6 +497,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em 8em 1em 8em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #ex {
@@ -458,6 +509,10 @@ body {
         color: #FFFFFF;
         border-style: none;
         padding: 0.2em 0.3em;
+    }
+
+    #email_not input {
+        padding: 0.2em;
     }
 }
 
@@ -481,7 +536,10 @@ body {
 
     .head_text h1 {
         border-style: solid;
-        border-width: 2%;
+        border-width: 0.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.3em;
+        font-size: 3em;
     }
 
     .ftrs_list {
@@ -537,6 +595,7 @@ body {
         width: 28vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     form input {
@@ -559,6 +618,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em 15em 1em 15em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #ex {
@@ -570,5 +630,9 @@ body {
         color: #FFFFFF;
         border-style: none;
         padding: 0.2em 0.3em;
+    }
+
+    #email_not input {
+        padding: 0.2em;
     }
 }
